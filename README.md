@@ -3,9 +3,9 @@
 
 ## Overview
 
-* Scene graphs capture visual relationships between objects in images, e.g. `<person, riding, bike>`. They have emerged as useful in a number of computer vision tasks, including visual quetsion answering and captioning.
-* However, most scene graph datasets are spare due to annotator error!
-* This work attempts to overcome limitations of human annotators using a semi-supervised method, takeing advantage of both limited labels and unlabeled data, to **generate training datasets for scene graphs**.
+* Scene graphs capture visual relationships between objects in images, e.g. `<person, riding, bike>`. They have emerged as useful in a number of computer vision tasks, including visual question answering and captioning.
+* However, most scene graph datasets are sparse due to annotator error!
+* This work attempts to overcome limitations of human annotators using a semi-supervised method, taking advantage of both limited labels and unlabeled data, to **generate training datasets for scene graphs**.
 
 * Approach:
     * We leverage _image-agnostic features_, which are _cheap_ to extract given bounding box pairs of images.
