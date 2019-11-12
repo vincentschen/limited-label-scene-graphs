@@ -1,5 +1,6 @@
 # Scene Graph Prediction with Limited Labels
 
+
 ## Overview
 
 * Scene graphs capture visual relationships between objects in images, e.g. `<person, riding, bike>`. They have emerged as useful in a number of computer vision tasks, including visual quetsion answering and captioning.
@@ -13,6 +14,23 @@
     * Using probabilistic labels over the unlabeled training data, we can bootstrap training for any downstream scene graph model!
 
 <img align="center" src="figs/pipeline.png">
+
+
+## Setup
+Please run the following script to download the [VisualGenome](visualgenome.org) dataset.
+```
+./scripts/get_visualgenome.sh
+```
+
+To create the virtual environment with appropriate requirements:
+```
+virtualenv -p python3 .env
+source .env/bin/activate
+pip install -r requirements.txt
+```
+
+## Demo
+All instructions for this demonstration are included in `main.ipynb`.
 
 
 ### Paper
@@ -30,15 +48,6 @@ Please refer to the following citation if you are building on this work:
     year = {2019}
 }
 ```
-
-## Setup
-Please run the following script to download the [VisualGenome](visualgenome.org) dataset.
-```
-./scripts/get_visualgenome.sh
-```
-
-## Demo
-All instructions for this demonstration are included in `main.ipynb`.
 
 ## Contributions
 Feel free to open an issue or send an email if you have any questions!
