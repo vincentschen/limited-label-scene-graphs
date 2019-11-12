@@ -37,6 +37,13 @@ Please run the following script to download the [VisualGenome](visualgenome.org)
 ./scripts/get_visualgenome.sh
 ```
 
+To create the virtual environment with appropriate requirements:
+```
+virtualenv -p python3 .env
+source .env/bin/activate
+pip install -r requirements.txt
+```
+
 ## Demo
 All instructions for this demonstration are included in `main.ipynb`.
 
